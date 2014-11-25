@@ -31,4 +31,5 @@ public class PriorityQueue<T:Comparable> : Heap<T> {
         if isEmpty() {return nil}
         return array[0]
     }
+    
 }
