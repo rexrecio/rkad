@@ -10,6 +10,17 @@
 		742BEBA31A246AC1003DB606 /* rkad.h in Headers */ = {isa = PBXBuildFile; fileRef = 742BEBA21A246AC1003DB606 /* rkad.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		742BEBA91A246AC2003DB606 /* rkad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 742BEB9D1A246AC1003DB606 /* rkad.framework */; };
 		742BEBB01A246AC2003DB606 /* rkadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742BEBAF1A246AC2003DB606 /* rkadTests.swift */; };
+		742BEBC21A246AE2003DB606 /* BinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742BEBB91A246AE2003DB606 /* BinarySearchTree.swift */; };
+		742BEBC31A246AE2003DB606 /* CircularList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742BEBBA1A246AE2003DB606 /* CircularList.swift */; };
+		742BEBC41A246AE2003DB606 /* Deque.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742BEBBB1A246AE2003DB606 /* Deque.swift */; };
+		742BEBC51A246AE2003DB606 /* DoublyLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742BEBBC1A246AE2003DB606 /* DoublyLinkedList.swift */; };
+		742BEBC61A246AE2003DB606 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742BEBBD1A246AE2003DB606 /* Heap.swift */; };
+		742BEBC71A246AE2003DB606 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742BEBBE1A246AE2003DB606 /* LinkedList.swift */; };
+		742BEBC81A246AE2003DB606 /* PriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742BEBBF1A246AE2003DB606 /* PriorityQueue.swift */; };
+		742BEBC91A246AE2003DB606 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742BEBC01A246AE2003DB606 /* Queue.swift */; };
+		742BEBCA1A246AE2003DB606 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742BEBC11A246AE2003DB606 /* Stack.swift */; };
+		742BEBCD1A246B07003DB606 /* testQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742BEBCB1A246B07003DB606 /* testQueue.swift */; };
+		742BEBCE1A246B07003DB606 /* testStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742BEBCC1A246B07003DB606 /* testStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +40,17 @@
 		742BEBA81A246AC2003DB606 /* rkadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rkadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		742BEBAE1A246AC2003DB606 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		742BEBAF1A246AC2003DB606 /* rkadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rkadTests.swift; sourceTree = "<group>"; };
+		742BEBB91A246AE2003DB606 /* BinarySearchTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinarySearchTree.swift; sourceTree = "<group>"; };
+		742BEBBA1A246AE2003DB606 /* CircularList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularList.swift; sourceTree = "<group>"; };
+		742BEBBB1A246AE2003DB606 /* Deque.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deque.swift; sourceTree = "<group>"; };
+		742BEBBC1A246AE2003DB606 /* DoublyLinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoublyLinkedList.swift; sourceTree = "<group>"; };
+		742BEBBD1A246AE2003DB606 /* Heap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
+		742BEBBE1A246AE2003DB606 /* LinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
+		742BEBBF1A246AE2003DB606 /* PriorityQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriorityQueue.swift; sourceTree = "<group>"; };
+		742BEBC01A246AE2003DB606 /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		742BEBC11A246AE2003DB606 /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		742BEBCB1A246B07003DB606 /* testQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testQueue.swift; sourceTree = "<group>"; };
+		742BEBCC1A246B07003DB606 /* testStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +93,15 @@
 		742BEB9F1A246AC1003DB606 /* rkad */ = {
 			isa = PBXGroup;
 			children = (
+				742BEBB91A246AE2003DB606 /* BinarySearchTree.swift */,
+				742BEBBA1A246AE2003DB606 /* CircularList.swift */,
+				742BEBBB1A246AE2003DB606 /* Deque.swift */,
+				742BEBBC1A246AE2003DB606 /* DoublyLinkedList.swift */,
+				742BEBBD1A246AE2003DB606 /* Heap.swift */,
+				742BEBBE1A246AE2003DB606 /* LinkedList.swift */,
+				742BEBBF1A246AE2003DB606 /* PriorityQueue.swift */,
+				742BEBC01A246AE2003DB606 /* Queue.swift */,
+				742BEBC11A246AE2003DB606 /* Stack.swift */,
 				742BEBA21A246AC1003DB606 /* rkad.h */,
 				742BEBA01A246AC1003DB606 /* Supporting Files */,
 			);
@@ -88,6 +119,8 @@
 		742BEBAC1A246AC2003DB606 /* rkadTests */ = {
 			isa = PBXGroup;
 			children = (
+				742BEBCB1A246B07003DB606 /* testQueue.swift */,
+				742BEBCC1A246B07003DB606 /* testStack.swift */,
 				742BEBAF1A246AC2003DB606 /* rkadTests.swift */,
 				742BEBAD1A246AC2003DB606 /* Supporting Files */,
 			);
@@ -209,6 +242,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				742BEBC71A246AE2003DB606 /* LinkedList.swift in Sources */,
+				742BEBCA1A246AE2003DB606 /* Stack.swift in Sources */,
+				742BEBC31A246AE2003DB606 /* CircularList.swift in Sources */,
+				742BEBC61A246AE2003DB606 /* Heap.swift in Sources */,
+				742BEBC91A246AE2003DB606 /* Queue.swift in Sources */,
+				742BEBC21A246AE2003DB606 /* BinarySearchTree.swift in Sources */,
+				742BEBC41A246AE2003DB606 /* Deque.swift in Sources */,
+				742BEBC81A246AE2003DB606 /* PriorityQueue.swift in Sources */,
+				742BEBC51A246AE2003DB606 /* DoublyLinkedList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +258,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				742BEBCE1A246B07003DB606 /* testStack.swift in Sources */,
 				742BEBB01A246AC2003DB606 /* rkadTests.swift in Sources */,
+				742BEBCD1A246B07003DB606 /* testQueue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +359,7 @@
 		742BEBB41A246AC2003DB606 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -326,12 +371,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		742BEBB51A246AC2003DB606 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
