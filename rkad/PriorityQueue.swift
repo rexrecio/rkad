@@ -14,22 +14,118 @@
 //
 //
 //  PriorityQueue.swift:
-//  An implementation of Priority Queue using a max heap.
+//  A PriorityQueue that uses a Heap (max heap) data structure implementation.  
+//  A (max) heap is an ordered, balanced binary tree in which the value of the node
+//  at the root of any subtree is greater than or equal to the value of either 
+//  of its children.  This implementation uses an array.
 //
 //  Created by Rex Recio (rexrecio@gmail.com) on 10/28/14.
 //
 
-public class PriorityQueue<T:Comparable> : Heap<T> {
+public class PriorityQueue<T:Comparable> {
+    internal var array: Array<T> = []
+    internal var nextelement=0
+    internal var heapsize=0
+    
+    public convenience init () {
+        self.init(64)
+    }
+    
+    public init (_ initialSize: Int) {
+        array.reserveCapacity(initialSize)
+    }
+    
+    public func isEmpty() -> Bool {
+        return nextelement == 0 ? true : false
+    }
+    
+    public func count() -> Int {
+        return nextelement
+    }
+    
+    public func add(data: T) {
+        if nextelement == heapsize {
+            heapsize++
+        }
+        if nextelement == array.count {
+            array.append(data)
+        }
+        else {
+            array[nextelement] = data
+        }
+        siftup(nextelement)
+        nextelement++
+    }
+    
+    private func remove(element: Int) -> T? {
+        if element >= nextelement {
+            return nil
+        }
+        var deletedData: T
+        deletedData = array[element]
+        nextelement--
+        if element != nextelement {
+            array[element] = array[nextelement]
+            siftdown(element)
+        }
+        
+        return deletedData
+    }
+    
     public func remove() -> T? {
-        //Remove the element with the highest priority,
-        //this element is located in the root
-        return super.remove(0)
+        return remove(0)
     }
     
-    //Returns the highest-priority element but does not modify the queue,
-    public func findMax() -> T? {
-        if isEmpty() {return nil}
-        return array[0]
+    private func siftup (element: Int) {
+        var parent: Int
+        var temp: T
+        
+        if (element == 0) {
+            return
+        }
+            
+        parent = (element - 1) / 2
+        if (array[element] <= array[parent]) {
+            return
+        }
+            
+        temp = array[element]
+        array[element] = array[parent]
+        array[parent] = temp
+        
+        siftup(parent)
     }
     
+    private func siftdown (parent: Int) {
+        var leftChild, rightChild, swapElement: Int
+        var temp: T
+        
+        leftChild = 2 * parent + 1
+        rightChild = leftChild + 1
+        
+        /*if no child*/
+        if (leftChild >= nextelement) {
+            return
+        }
+        
+        /*if no right child*/
+        if (rightChild >= nextelement) {
+            if (array[parent] < array[leftChild]) {
+                temp = array[parent]
+                array[parent] = array[leftChild]
+                array[leftChild] = temp
+            }
+            return
+        }
+        /*Two children, swap the parent with the bigger child*/
+        if (array[parent] < array[leftChild] || array[parent] < array[rightChild]) {
+            swapElement = array[leftChild] > array[rightChild] ? leftChild : rightChild
+            temp = array[parent]
+            array[parent] = array[swapElement]
+            array[swapElement] = temp
+            
+            siftdown(swapElement)
+        }
+    }
 }
+

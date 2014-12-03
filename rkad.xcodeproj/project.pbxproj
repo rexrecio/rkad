@@ -14,13 +14,13 @@
 		742BEBC31A246AE2003DB606 /* CircularList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742BEBBA1A246AE2003DB606 /* CircularList.swift */; };
 		742BEBC41A246AE2003DB606 /* Deque.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742BEBBB1A246AE2003DB606 /* Deque.swift */; };
 		742BEBC51A246AE2003DB606 /* DoublyLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742BEBBC1A246AE2003DB606 /* DoublyLinkedList.swift */; };
-		742BEBC61A246AE2003DB606 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742BEBBD1A246AE2003DB606 /* Heap.swift */; };
+		742BEBC61A246AE2003DB606 /* PriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742BEBBD1A246AE2003DB606 /* PriorityQueue.swift */; };
 		742BEBC71A246AE2003DB606 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742BEBBE1A246AE2003DB606 /* LinkedList.swift */; };
-		742BEBC81A246AE2003DB606 /* PriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742BEBBF1A246AE2003DB606 /* PriorityQueue.swift */; };
 		742BEBC91A246AE2003DB606 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742BEBC01A246AE2003DB606 /* Queue.swift */; };
 		742BEBCA1A246AE2003DB606 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742BEBC11A246AE2003DB606 /* Stack.swift */; };
 		742BEBCD1A246B07003DB606 /* testQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742BEBCB1A246B07003DB606 /* testQueue.swift */; };
 		742BEBCE1A246B07003DB606 /* testStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742BEBCC1A246B07003DB606 /* testStack.swift */; };
+		74B9276E1A24C103005C0324 /* testPriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B9276D1A24C103005C0324 /* testPriorityQueue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,13 +44,13 @@
 		742BEBBA1A246AE2003DB606 /* CircularList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularList.swift; sourceTree = "<group>"; };
 		742BEBBB1A246AE2003DB606 /* Deque.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deque.swift; sourceTree = "<group>"; };
 		742BEBBC1A246AE2003DB606 /* DoublyLinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoublyLinkedList.swift; sourceTree = "<group>"; };
-		742BEBBD1A246AE2003DB606 /* Heap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
+		742BEBBD1A246AE2003DB606 /* PriorityQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriorityQueue.swift; sourceTree = "<group>"; };
 		742BEBBE1A246AE2003DB606 /* LinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
-		742BEBBF1A246AE2003DB606 /* PriorityQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriorityQueue.swift; sourceTree = "<group>"; };
 		742BEBC01A246AE2003DB606 /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		742BEBC11A246AE2003DB606 /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		742BEBCB1A246B07003DB606 /* testQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testQueue.swift; sourceTree = "<group>"; };
 		742BEBCC1A246B07003DB606 /* testStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testStack.swift; sourceTree = "<group>"; };
+		74B9276D1A24C103005C0324 /* testPriorityQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testPriorityQueue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +97,8 @@
 				742BEBBA1A246AE2003DB606 /* CircularList.swift */,
 				742BEBBB1A246AE2003DB606 /* Deque.swift */,
 				742BEBBC1A246AE2003DB606 /* DoublyLinkedList.swift */,
-				742BEBBD1A246AE2003DB606 /* Heap.swift */,
+				742BEBBD1A246AE2003DB606 /* PriorityQueue.swift */,
 				742BEBBE1A246AE2003DB606 /* LinkedList.swift */,
-				742BEBBF1A246AE2003DB606 /* PriorityQueue.swift */,
 				742BEBC01A246AE2003DB606 /* Queue.swift */,
 				742BEBC11A246AE2003DB606 /* Stack.swift */,
 				742BEBA21A246AC1003DB606 /* rkad.h */,
@@ -119,6 +118,7 @@
 		742BEBAC1A246AC2003DB606 /* rkadTests */ = {
 			isa = PBXGroup;
 			children = (
+				74B9276D1A24C103005C0324 /* testPriorityQueue.swift */,
 				742BEBCB1A246B07003DB606 /* testQueue.swift */,
 				742BEBCC1A246B07003DB606 /* testStack.swift */,
 				742BEBAF1A246AC2003DB606 /* rkadTests.swift */,
@@ -245,11 +245,10 @@
 				742BEBC71A246AE2003DB606 /* LinkedList.swift in Sources */,
 				742BEBCA1A246AE2003DB606 /* Stack.swift in Sources */,
 				742BEBC31A246AE2003DB606 /* CircularList.swift in Sources */,
-				742BEBC61A246AE2003DB606 /* Heap.swift in Sources */,
+				742BEBC61A246AE2003DB606 /* PriorityQueue.swift in Sources */,
 				742BEBC91A246AE2003DB606 /* Queue.swift in Sources */,
 				742BEBC21A246AE2003DB606 /* BinarySearchTree.swift in Sources */,
 				742BEBC41A246AE2003DB606 /* Deque.swift in Sources */,
-				742BEBC81A246AE2003DB606 /* PriorityQueue.swift in Sources */,
 				742BEBC51A246AE2003DB606 /* DoublyLinkedList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				742BEBCE1A246B07003DB606 /* testStack.swift in Sources */,
+				74B9276E1A24C103005C0324 /* testPriorityQueue.swift in Sources */,
 				742BEBB01A246AC2003DB606 /* rkadTests.swift in Sources */,
 				742BEBCD1A246B07003DB606 /* testQueue.swift in Sources */,
 			);
@@ -444,6 +444,7 @@
 				742BEBB51A246AC2003DB606 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		742BEBB61A246AC2003DB606 /* Build configuration list for PBXNativeTarget "rkadTests" */ = {
 			isa = XCConfigurationList;
@@ -452,6 +453,7 @@
 				742BEBB81A246AC2003DB606 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
